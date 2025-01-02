@@ -16,14 +16,14 @@
   padding: 0.7vw 1.5vw;
   margin: 4px;
   text-align: center;
-  font-size: clamp(24px, 5vw, 54px);
+  font-size: clamp(24px, 4.8vw, 50px);
 }
 
 .logo {
   display: flex;
   margin: 1vw;
-  width: 7.5vw;
-  height: 7.5vw;
+  width: 6.7vw;
+  height: 6.7vw;
   min-width: 42px;
   min-height: 42px;
 }
@@ -43,7 +43,7 @@ a {
 }
 
 .icon {
-  width: 3.7vw;
+  width: 3.2vw;
   min-width: 25px;
-  margin: 0vw 4vw;
+  margin: 0vw 5vw;
 }
