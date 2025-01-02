@@ -1,0 +1,49 @@
+* {
+  background-color: #b49772;
+}
+
+.flex-container {
+  display: flex;
+  background-color: #725740;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.title {
+  display: flex;
+  background-color: #725740;
+  color: #efd9bf;
+  padding: 0.7vw 1.5vw;
+  margin: 4px;
+  text-align: center;
+  font-size: clamp(24px, 5vw, 54px);
+}
+
+.logo {
+  display: flex;
+  margin: 1vw;
+  width: 7.5vw;
+  height: 7.5vw;
+  min-width: 42px;
+  min-height: 42px;
+}
+
+.navbar {
+  display: flex;
+  background-color: #725740;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0.8vw;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  padding: 0.7vw;
+}
+
+.icon {
+  width: 3.7vw;
+  min-width: 25px;
+  margin: 0vw 4vw;
+}
