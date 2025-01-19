@@ -1,0 +1,101 @@
+/* Basic styling for the navbar */
+nav {
+  background-color: #333;
+  padding: 5px 15px; /* Smaller padding for a more compact navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+/* Style the navigation links */
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden; /* Prevents overflowing */
+  flex-wrap: wrap; /* Ensures the navbar wraps on small screens */
+}
+
+/* Style individual list items */
+nav ul li {
+  margin: 0 10px; /* Reduced margin for more compact spacing */
+}
+
+/* Style the links */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px; /* Smaller font size for a more compact look */
+  transition: all 0.3s ease;
+  display: block;
+  white-space: nowrap; /* Prevents text from wrapping */
+  padding: 5px 10px; /* Adds padding around links */
+}
+
+/* Add a hover effect on the links */
+nav ul li a:hover {
+  color: #f39c12; /* Change color on hover */
+  text-decoration: underline;
+}
+
+/* Logo styling (optional) */
+nav .logo {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Mobile responsive navbar */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin: 8px 0; /* Reduce margin on mobile */
+  }
+
+  nav ul li a {
+    font-size: 14px; /* Slightly smaller font size on mobile */
+    padding: 10px 15px; /* Increase padding for touch-friendly navigation */
+    text-align: left; /* Align text to the left on smaller screens */
+  }
+
+  /* Ensure logo is aligned on mobile */
+  nav .logo {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Further styling for extra small screens (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+  nav {
+    padding: 5px 10px; /* Smaller padding for very small screens */
+  }
+
+  nav ul li a {
+    font-size: 12px; /* Even smaller font size for tiny screens */
+    padding: 8px 12px; /* Adjust padding */
+  }
+
+  nav .logo {
+    font-size: 14px;
+  }
+}
